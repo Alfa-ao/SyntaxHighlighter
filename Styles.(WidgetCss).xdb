@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetCss>
+    <Id>Console</Id>
+    <Selectors>
+        <!-- Ключевые слова (Розовый/Сиреневый) -->
+        <Item>
+            <Name>console_keyword</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFFC586C0</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+        
+        <!-- Строки (Оранжевый) -->
+        <Item>
+            <Name>console_string</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFFFFA657</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+        
+        <!-- Комментарии (Зеленый) -->
+        <Item>
+            <Name>console_comment</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFF6A9955</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+        
+        <!-- Числа (Светло-зеленый) -->
+        <Item>
+            <Name>console_number</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFFB5CEA8</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+        
+        <!-- Функции (Желтый) -->
+        <Item>
+            <Name>console_function</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFFDCDCAA</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+        
+        <!-- Переменные и идентификаторы (Голубой) -->
+        <Item>
+            <Name>console_variable</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFF9CDCFE</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+
+        <!-- Булевы значения true/false/nil (Синий) -->
+        <Item>
+            <Name>console_boolean</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFF569CD6</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+
+        <!-- Типы: table, userdata, number, string, WString (Бирюзовый/Циан) -->
+        <Item>
+            <Name>console_type</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFF4EC9B0</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+        
+        <!-- Операторы (Белый/Серый) -->
+        <Item>
+            <Name>console_operator</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFFD4D4D4</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+        
+        <!-- Дефолтный текст (Белый) -->
+        <Item>
+            <Name>console_text</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFFD4D4D4</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+		
+        <!-- Цветные скобки для уровней вложенности -->
+        
+        <!-- Скобки уровня 1 (Желтый) -->
+        <Item>
+            <Name>console_bracket_1</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFFFFD700</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+        
+        <!-- Скобки уровня 2 (Сиреневый/Розовый) -->
+        <Item>
+            <Name>console_bracket_2</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFFC586C0</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+        
+        <!-- Скобки уровня 3 (Синий) -->
+        <Item>
+            <Name>console_bracket_3</Name>
+            <Items>
+                <Item>
+                    <Key>color</Key>
+                    <Value>0xFF569CD6</Value>
+                </Item>
+                <Item>
+                    <Key>fontname</Key>
+                    <Value>AllodsConsole</Value>
+                </Item>
+                <Item>
+                    <Key>fontsize</Key>
+                    <Value>15</Value>
+                </Item>
+                <Item>
+                    <Key>alignx</Key>
+                    <Value>left</Value>
+                </Item>
+            </Items>
+        </Item>
+    </Selectors>
+</WidgetCss>
