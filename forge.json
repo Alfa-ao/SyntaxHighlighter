@@ -1,0 +1,13 @@
+{
+    "name": "SyntaxHighlighter",
+    "type": "Library",
+    "execute": {
+        "unpack": [
+            "SyntaxHighlighter.lua",
+			"Styles.(WidgetCss).xdb"
+        ]
+    },
+    "files": {
+        "SyntaxHighlighter.lua": 20
+    }
+}

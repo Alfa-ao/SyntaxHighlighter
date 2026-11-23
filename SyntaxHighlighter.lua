@@ -1,61 +1,49 @@
 
 Global( "SyntaxHighlighter", {
     tags_map = {
-        ["def"] = "console_text",
-        ["keyword"] = "console_keyword",
-        ["string"] = "console_string",
-        ["comment"] = "console_comment",
-        ["number"] = "console_number",
-        ["number_hex"] = "console_number",
-        ["function"] = "console_function",
-        ["variable"] = "console_variable",
-        ["boolean"] = "console_boolean",
-        ["type"] = "console_type",
-        ["operator"] = "console_operator",
+        ["def"] = "c_text",
+        ["keyword"] = "c_keyword",
+        ["string"] = "c_string",
+        ["comment"] = "c_comment",
+        ["number"] = "c_number",
+        ["number_hex"] = "c_number",
+        ["function"] = "c_function",
+        ["variable"] = "c_variable",
+        ["boolean"] = "c_boolean",
+        ["type"] = "c_type",
+        ["operator"] = "c_operator",
     }
 } )
 
--- Конструкции
-local lua_keywords = {
-    ["and"] = true, ["or"] = true,
-    ["break"] = true,
-    ["do"] = true, ["for"] = true, ["in"] = true, ["repeat"] = true, ["until"] = true, ["while"] = true,
-    ["if"] = true, ["then"] = true, ["elseif"] = true, ["else"] = true, ["end"] = true,
-    ["function"] = true, ["return"] = true,
-    ["goto"] = true,
-    ["local"] = true,
-    ["not"] = true,
+-- конструкции
+local lua_keywords = table.map {
+	"and", "or",
+    "break",
+    "do","for", "in", "repeat", "until", "while",
+    "if", "then", "elseif", "else", "end",
+    "function", "return",
+    "goto",
+    "local",
+    "not",
 }
 
 -- boolean и nil
-local lua_booleans = {
-    ["true"] = true,
-    ["false"] = true,
-    ["nil"] = true
-}
+local lua_booleans = table.map { "true", "false", "nil", }
 
--- Типы
-local lua_types = {
-    ["table"] = true,
-    ["userdata"] = true, ["WString"] = true,
-    ["number"] = true,
-    ["string"] = true,
-    ["boolean"] = true,
-    ["function"] = true,
-    ["thread"] = true
-}
+-- типы
+local lua_types = table.map { "table", "userdata", "WString", "number", "string", "boolean", "function", "thread", }
 
--- Последовательная подсветка скобочек ([{}]) в рекурсии (Желтый -> Сиреневый -> Синий)
+-- подсветка скобочек ([{}]) в рекурсии: Желтый -> Сиреневый -> Синий
 local bracket_colors = {
-    [1] = "console_bracket_1",
-    [2] = "console_bracket_2",
-    [3] = "console_bracket_3",
+    [1] = "c_bracket_1",
+    [2] = "c_bracket_2",
+    [3] = "c_bracket_3",
 }
 local bracket_colors_count = #bracket_colors
 
---- [I] Токенизатор
+--- Токенизатор
 --- @param code string
---- @return string tokens
+--- @return table tokens
 local function tokenize( code )
     local tokens = {}
     local i = 1
@@ -65,7 +53,7 @@ local function tokenize( code )
     while i <= len do
         local c = code:sub( i, i )
 
-        -- Пробелы и переносы строк
+        -- whitespace "\n" "\r"
         if c:match( "%s" ) then
             local start = i
             while i <= len and code:sub( i, i ):match( "%s" ) do
@@ -73,7 +61,7 @@ local function tokenize( code )
             end
             table.insert( tokens, { type = "whitespace", value = code:sub( start, i - 1 ) } )
 
-        -- Комментарии
+        -- comments
         elseif c == "-" and code:sub( i, i + 1 ) == "--" then
             local start = i
             if code:sub( i, i + 3 ) == "--[[" then
@@ -85,7 +73,7 @@ local function tokenize( code )
             end
             table.insert( tokens, { type = "comment", value = code:sub( start, i - 1 ) } )
 
-        -- Строки ( '', "", [[]] )
+        -- string '', "", [[]]
         elseif c == '"' or c == "'" then
             local start = i
             local quote = c
@@ -108,7 +96,7 @@ local function tokenize( code )
             i = end_pos and ( end_pos + 2 ) or ( len + 1 )
             table.insert( tokens, { type = "string", value = code:sub( start, i - 1 ) } )
 
-        -- Числа (integer, double, hex)
+        -- integer, double, hex
         elseif c:match( "%d" ) or ( c == "." and code:sub( i + 1, i + 1 ):match( "%d" ) ) then
             local start = i
             local is_hex = false
@@ -177,7 +165,7 @@ end
 
 
 
---- [P] Метод. Стилизирование текста.
+--- Подсветка текста
 --- @param code string
 --- @return string
 function SyntaxHighlighter:highlight( code )
