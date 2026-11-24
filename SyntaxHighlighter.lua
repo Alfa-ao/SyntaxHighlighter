@@ -190,6 +190,12 @@ function SyntaxHighlighter:highlight( code )
             table.insert( result, string.format( "<%s>%s</%s>", tag, safe_value, tag ) )
         end
     end
-
+    
+    -- Если делать всё через ValuedText, станет только хуже. Слишком много тегов
+    --[[ local params = { format = ToWs( table.concat( result ) ) }
+    for _, v in pairs( tags_map ) do
+        params[ v ] = v
+    end
+    return common.CreateValuedText( params ) ]]
     return table.concat( result )
 end

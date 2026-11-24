@@ -21,6 +21,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x20C586C0</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 		<Item>
@@ -42,6 +54,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x20FFA657</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 		<Item>
@@ -63,6 +87,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x206A9955</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 		<Item>
@@ -84,6 +120,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x20B5CEA8</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 		<Item>
@@ -105,6 +153,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x20DCDCAA</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 		<Item>
@@ -126,6 +186,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x209CDCFE</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 		<Item>
@@ -147,6 +219,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x20569CD6</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 		<Item>
@@ -168,6 +252,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x204EC9B0</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 		<Item>
@@ -189,6 +285,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x20D4D4D4</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 		<Item>
@@ -210,6 +318,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x20D4D4D4</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 		<Item>
@@ -231,6 +351,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x20FFD700</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 		<Item>
@@ -252,6 +384,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x20C586C0</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 		<Item>
@@ -273,6 +417,18 @@
 					<Key>alignx</Key>
 					<Value>left</Value>
 				</Item>
+				
+				
+				<Item>
+					<Key>outline</Key>
+					<Value>1</Value>
+				</Item>
+				<Item>
+					<Key>outlinecolor</Key>
+					<Value>0x20569CD6</Value>
+				</Item>
+				
+				
 			</Items>
 		</Item>
 	</Selectors>
